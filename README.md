@@ -7,7 +7,7 @@ This package uses "deep simulated moments" as proposed in [*Constructing Efficie
 
 The model is a simple example of a DSGE model:
 
-'''
+```julia
 equations:
 MUC = c^(-γ)
 MUL = ψ*exp(η)
@@ -20,7 +20,7 @@ z(+1) = ρ₁*z + σ₁ * u
 y = exp(z) * (k^α) * (n^(1-α))
 k(+1) = y - c + (1-δ)*k
 end
-'''
+``
 
 which is solved and simulated, to give the variables y, c, n, w, and r.
 
